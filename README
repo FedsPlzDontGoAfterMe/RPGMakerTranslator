@@ -1,0 +1,21 @@
+# RPGMAKERTRANSLATOR
+
+This is a highly specialized tool for using llms to assist you in translating RPGMAKER games.
+
+## Features
+- Select the main directory of a game project.
+- Translate the text in the selected project.
+- Filter translations by how likely an error is (e.g., Green, Yellow, Red).
+
+## Notes
+ - Saves only happen when the save progress button is pressed, and when the exit button is pressed. If you find some weird way to close the app it wont save
+ - HF has a free api, but you can only use a very limited number of their text generation models. I strongly recommend using GPT either 3.5 or 4o.
+ - The 'C' button copies the original text to the translated text, it will overide any translation that is there
+ - The '+' Button will push all the text below that text down by one. Its for when the translation combines two lines in the translation.
+ - if the rpgmaker version you use has some weird path for its data, you can change the directory this app searches for in ProjectLoader.py, at the bottom of the get text from project function
+
+## Requirements
+Before running the application, make sure you have Python installed and all necessary dependencies. You can install the dependencies using `pip`:
+
+```bash
+pip install -r requirements.txt

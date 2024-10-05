@@ -1,0 +1,4 @@
+python-dotenv==1.0.0         # For loading environment variables
+huggingface-hub==0.17.1      # For using the Hugging Face InferenceClient
+openai==0.28.0               # For OpenAI API access
+customtkinter==5.0.3         # CustomTkinter for building the UI
